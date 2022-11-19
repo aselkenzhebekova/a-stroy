@@ -14,6 +14,9 @@
   border-radius: 50%;
   display: inline-block;
 }
+.gold {
+  color: #FFC771;
+}
 /* UNIQUE */
 
 .hero {
@@ -117,11 +120,20 @@
     margin-top: 71px;
   }
   &__title {
+    position: relative;
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
     color: #593F0D;
     max-width: 650px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background-color: #FFCF6E;
+      bottom: -29px;
+    }
   }
   &__desc {
     font-weight: 400;

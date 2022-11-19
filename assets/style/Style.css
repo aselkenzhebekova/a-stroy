@@ -15,6 +15,10 @@
   display: inline-block;
 }
 
+.gold {
+  color: #FFC771;
+}
+
 /* UNIQUE */
 .hero {
   position: relative;
@@ -116,11 +120,20 @@
   margin-top: 71px;
 }
 .hero__title {
+  position: relative;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
   color: #593F0D;
   max-width: 650px;
+}
+.hero__title::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: #FFCF6E;
+  bottom: -29px;
 }
 .hero__desc {
   font-weight: 400;
